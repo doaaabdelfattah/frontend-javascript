@@ -24,3 +24,29 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
 };
 
 // ============== C L A S S E S ================
+
+interface StudentInter {
+  firstName: string;
+  lastName: string;
+  workOnHomework(): string;
+  displayName(): string;
+}
+class StudentClass implements StudentInter {
+  // Property declaration
+  firstName: string;
+  lastName: string;
+  // Constructor: Initializes properties when an instance is created
+  constructor(firstName: string, lastName: string) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  // Methods
+  workOnHomework(): string {
+    return `Currently working`;
+  }
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
