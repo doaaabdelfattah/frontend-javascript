@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "es6",
     "target": "es5",
-    "allowJs": true,
-    "moduleResolution": "node",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./js",
+    "rootDir": "./js",
     "skipLibCheck": true
-  }
+  },
+  "include": ["./js/**/*"],
+  "exclude": ["node_modules"]
 }
